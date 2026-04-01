@@ -93,13 +93,27 @@ Also update the panel embed text in `_build_panel_embed()` and
 
 ---
 
-### 5. Run the Bot
+### 5. Run the Bot (Testing Phase)
 
 **Locally:**
 ```bash
 pip install -r requirements.txt
 python bot.py
 ```
+### 6. Host the Discord Bot 
+Hosting of a discord bot can be offered by many Services from web hosting services provided by Amazon Web Services (AWS) To Your own Computer/server with docker.
+As from the File uploaded, this bot was hosted in Discloud Website/bot hosting which I recommend as they offer quality support and is cheap and reliable 
+https://discloud.com/ 
+https://docs.discloud.com/en
+
+**On AWS:**
+-https://aws.amazon.com/
+  Check youtube or Aws website 
+
+
+  **Self-Hosting:**
+I suggest you use Hostinger for your convenience
+https://www.youtube.com/watch?v=68aslvcWZ0M
 
 **On Discloud:**
 - Make sure `config.py` is included in your zip (not just the example)
@@ -111,10 +125,10 @@ python bot.py
   discloud.config
   ```
 - Upload the zip to Discloud
-
+ 
 ---
 
-### 6. Post the Ticket Panel
+### 7. Post the Ticket Panel
 
 In your support channel, run:
 ```
