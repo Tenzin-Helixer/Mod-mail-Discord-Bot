@@ -1,0 +1,109 @@
+# =============================================================================
+#  config.py  —  All settings for the ModMail bot
+#
+#  INSTRUCTIONS:
+#    1. Rename this file from  config.py.example  to  config.py
+#    2. Fill in every value marked with  ← REPLACE
+#    3. Never share or commit config.py publicly — it contains your bot token
+# =============================================================================
+
+
+# =============================================================================
+#  BOT TOKEN
+#  Get this from https://discord.com/developers/applications
+#  → Your Application → Bot → Reset Token
+# =============================================================================
+TOKEN = "YOUR_BOT_TOKEN_HERE"   # ← REPLACE
+
+
+# =============================================================================
+#  SERVER (GUILD) IDs
+#
+#  GUILD_ID        — The CENTRAL server where all ticket threads are created.
+#                    This is where your staff teams live.
+#
+#  LOG_CHANNEL_ID  — Channel in the central server where closed-ticket
+#                    transcripts are posted. Staff-only channel recommended.
+# =============================================================================
+GUILD_ID        = 000000000000000000   # ← REPLACE
+LOG_CHANNEL_ID  = 000000000000000000   # ← REPLACE
+
+
+# =============================================================================
+#  BEHAVIOUR SETTINGS
+#
+#  AUTO_CLOSE_HOURS  — Automatically close tickets with no activity after
+#                      this many hours. Set to 0 to disable.
+#
+#  COOLDOWN_MINUTES  — How long a user must wait between opening tickets.
+# =============================================================================
+AUTO_CLOSE_HOURS = 48   # 0 = disabled
+COOLDOWN_MINUTES = 5
+
+
+# =============================================================================
+#  ROLE IDs
+#
+#  ADMIN_ROLE_ID  — This role has access to ALL ticket categories.
+#                   Use it for your head mods / admins.
+#
+#  How to get a role ID:
+#    Discord Settings → Advanced → Enable Developer Mode
+#    Right-click the role in Server Settings → Copy Role ID
+# =============================================================================
+ADMIN_ROLE_ID = 000000000000000000   # ← REPLACE
+
+
+# =============================================================================
+#  TICKET CHANNELS
+#  Maps each ticket category key → the channel ID where threads are created.
+#
+#  Create one regular text channel per category in your central server.
+#  Set channel permissions so only the right roles can see each channel:
+#    @everyone  → deny  View Channel
+#    Your role  → allow View Channel, Send Messages, etc.
+#
+#  The category keys here must match the keys in TICKET_CATEGORIES in bot.py.
+# =============================================================================
+TICKET_CHANNELS = {
+    "general":    000000000000000000,   # ← REPLACE  e.g. #general-tickets
+    "report":     000000000000000000,   # ← REPLACE  e.g. #report-tickets
+    "suggestion": 000000000000000000,   # ← REPLACE  e.g. #suggestion-tickets
+    "other":      000000000000000000,   # ← REPLACE  e.g. #other-tickets
+}
+
+
+# =============================================================================
+#  TICKET ROLES
+#  Maps each ticket category key → the role ID that handles it.
+#
+#  When a ticket opens, the bot pings this role in the thread.
+#  Members with this role can also see/manage tickets of that category.
+#
+#  You can reuse the same role for multiple categories if needed.
+# =============================================================================
+TICKET_ROLES = {
+    "general":    000000000000000000,   # ← REPLACE  e.g. Support Team role
+    "report":     000000000000000000,   # ← REPLACE  e.g. Moderation role
+    "suggestion": 000000000000000000,   # ← REPLACE  e.g. Admin role
+    "other":      000000000000000000,   # ← REPLACE  e.g. Support Team role
+}
+
+
+# =============================================================================
+#  SATELLITE SERVERS  (optional — for multi-server setups)
+#
+#  If you run this bot in multiple servers but want all tickets to go to one
+#  central server, list your other servers here.
+#
+#  The bot will display the server name in ticket threads automatically
+#  by reading it from Discord. This dict is only used as a fallback
+#  if the bot can't find the server name (e.g. it left the server).
+#
+#  Format:
+#    server_id (int): "Display Name"
+# =============================================================================
+SATELLITE_SERVERS = {
+    # 123456789012345678: "My Other Server",
+    # 987654321098765432: "Another Server",
+}
