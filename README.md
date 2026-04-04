@@ -55,7 +55,7 @@ cp config.py.example config.py
 ```
 
 Open `config.py` and fill in every value:
-
+Note:To find the Guild_ID you have to have Developer Mode On in discord :) Just searh on youtube https://www.youtube.com/results?search_query=how+to+turn+developer+mode+on+discord
 | Setting | What to put |
 |---|---|
 | `TOKEN` | Your bot token from step 1 |
