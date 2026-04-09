@@ -1,7 +1,17 @@
 # ModMail Bot
 
-A Discord modmail bot. Users open tickets via buttons or DM.
-All conversation happens through the bot's DMs — staff reply in a private thread.
+A Discord modmail bot. Users open tickets via buttons that goes in DMs.
+All conversation happens through the bot's DMs — staff reply in a private thread with anonymity of what staff is talking to you which is good for staff.
+
+---
+
+## Features
+
+| features | Description |
+|---|---|
+| `Direct Chat in DM` | It oepns the DM of the bot like a normal mod-mail bot which gives privacy on who on the staff team is chatting |
+| ` Auto close tickets` | Tickets are closed after 48hrs/2days of inactivity.|
+| `TIckets Moderation` | Ban/unban users from tickets , Put private notes of users,priority lvls,announcement to all the users |
 
 ---
 
